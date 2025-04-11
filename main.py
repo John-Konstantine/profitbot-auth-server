@@ -98,7 +98,3 @@ async def admin_delete(request: Request):
         del licenses[remove_id]
         save_licenses(licenses)
     return RedirectResponse(url=f"/admin?id={ADMIN_ID}", status_code=302)
-<<<<<<< HEAD
-
-=======
->>>>>>> 8ab444c (Add admin panel)
